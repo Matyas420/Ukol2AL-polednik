@@ -1,10 +1,10 @@
 import random
 
 # Vytvoření jednorozměrného pole s 10 náhodnými hodnotami
-random_array = [random.randint(0, 100) for _ in range(10)]
+array1 = [random.randint(0, 100) for _ in range(10)]
 
-# Jednoduché seřazení pole
-sorted_array = sorted(random_array)
+# Seřazení pole
+serazeni = sorted(array1)
 
-print(random_array)
-print(sorted_array)
+print(array1)
+print(serazeni)
