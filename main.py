@@ -1,10 +1,14 @@
 import random
 
 # Vytvoření jednorozměrného pole s 10 náhodnými hodnotami
-array1 = [random.randint(0, 100) for _ in range(10)]
+array1 = [11, 54, 87, 65, 3, 24, 97, 14, 37, 60]
 
-# Seřazení pole
-serazeni = sorted(array1)
-
-print(array1)
-print(serazeni)
+def bubble_sort():
+    n = len(array1)
+    for i in range(n-1):
+        for j in range(0, n-i-1):
+            if array1[j] > array1[j+1] :
+                array1[j], array1[j+1] = array1[j+1], array1[j]
+            print(array1)
+        return array1
+print(bubble_sort())          
