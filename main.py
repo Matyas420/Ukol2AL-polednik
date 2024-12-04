@@ -12,3 +12,15 @@ def bubble_sort():
             print(array1)
         return array1
 print(bubble_sort())          
+
+array3 = [3, 1, 2, 5, 4]
+def bogo_sort(bogo):
+    return bogo == sorted(bogo)
+
+def bogosort(bogo):
+    while not bogo_sort(bogo):
+        random.shuffle(bogo)
+    return bogo
+
+print("Předtím:", array3)
+print("Potom:", bogosort(array3))
